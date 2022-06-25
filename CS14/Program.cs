@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CS14
 {
@@ -6,28 +6,25 @@ namespace CS14
     {
         static void Main(string[] args)
         {
-            string name;
             char symbol;
-            int nameLenght;
+            string name;
+            string line = "";
+            int namelenght;
 
-            Console.Write("Введите имя: ");
+            Console.WriteLine("Введите своё имя: ");
             name = Console.ReadLine();
-            nameLenght = name.Length;
-            Console.Write("Введите символ: ");
+            Console.WriteLine("Введите символ: ");
             symbol = Convert.ToChar(Console.ReadLine());
-            Console.Write("\n");
+            namelenght = name.Length;
+            Console.WriteLine("\n");
 
-            for(int i = 0; i < nameLenght + 2; i++)
+            for (int i = 0; i < namelenght + 2; i++)
             {
-                Console.Write(symbol);
+                line += symbol;
             }
-            Console.WriteLine("\n" + symbol + name + symbol);
-
-            for (int i = 0; i < nameLenght + 2; i++)
-            {
-                Console.Write(symbol);
-            }
-            Console.ReadKey();
+            Console.WriteLine(line);
+            Console.WriteLine(symbol + name + symbol);
+            Console.WriteLine(line);
         }
     }
 }
