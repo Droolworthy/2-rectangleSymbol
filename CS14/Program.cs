@@ -9,16 +9,16 @@ namespace CS14
             char symbol;
             string name;
             string line = "";
-            int namelenght;
+            int nameLenght;
 
             Console.WriteLine("Введите своё имя: ");
             name = Console.ReadLine();
             Console.WriteLine("Введите символ: ");
             symbol = Convert.ToChar(Console.ReadLine());
-            namelenght = name.Length;
+            nameLenght = name.Length;
             Console.WriteLine("\n");
 
-            for (int i = 0; i < namelenght + 2; i++)
+            for (int i = 0; i < nameLenght + 2; i++)
             {
                 line += symbol;
             }
