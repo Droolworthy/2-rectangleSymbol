@@ -8,22 +8,22 @@ namespace CS14
         {
             string name;
             char symbol;
-            int namelenght;
+            int nameLenght;
 
             Console.Write("Введите имя: ");
             name = Console.ReadLine();
-            namelenght = name.Length;
+            nameLenght = name.Length;
             Console.Write("Введите символ: ");
             symbol = Convert.ToChar(Console.ReadLine());
             Console.Write("\n");
 
-            for(int i = 0; i < namelenght + 2; i++)
+            for(int i = 0; i < nameLenght + 2; i++)
             {
                 Console.Write(symbol);
             }
             Console.WriteLine("\n" + symbol + name + symbol);
 
-            for (int i = 0; i < namelenght + 2; i++)
+            for (int i = 0; i < nameLenght + 2; i++)
             {
                 Console.Write(symbol);
             }
