@@ -9,7 +9,7 @@
 //Примечание:
 //Длину строки можно всегда узнать через свойство Length
 //string someString = “Hello”;
-//Console.WriteLine(someString.Length); //5
+//Console.WriteLine(someString.Length); //5.
 using System;
 
 namespace CS14
